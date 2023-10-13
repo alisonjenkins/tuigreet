@@ -269,7 +269,7 @@ async fn delete_key(greeter: &mut Greeter, key: KeyCode) {
     _ => 0,
   };
 
-  if value.chars().nth(index as usize).is_some() {
+  if value.chars().nth(index).is_some() {
     let left = value.chars().take(index);
     let right = value.chars().skip(index + 1);
 
